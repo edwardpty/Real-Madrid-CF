@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0c2e4e;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            color: #ffdd00;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #1e3c72;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffdd00;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: #ffdd00;
+            color: #1e3c72;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            color: #333;
+        }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        footer {
+            text-align: center;
+            background: #0c2e4e;
+            color: #ffdd00;
+            padding: 10px 0;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real Madrid CF</h1>
+        <p>Creado por: Leider Sanjur, Gerald Moráles y Yackniel Martínez</p>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('intro')">Introducción</a>
+        <a href="javascript:void(0)" onclick="showSection('titulos')">Títulos</a>
+        <a href="javascript:void(0)" onclick="showSection('jugadores')">Jugadores Importantes</a>
+        <a href="javascript:void(0)" onclick="showSection('valor')">Valor del Club</a>
+    </nav>
+
+    <!-- Introducción -->
+    <div id="intro" class="content section active">
+        <h2>Introducción</h2>
+        <p>El Real Madrid Club de Fútbol fue fundado el 6 de marzo de 1902 bajo el nombre de Madrid Football Club, cuando un grupo de aficionados al fútbol, encabezados por los hermanos Juan y Carlos Padrós, decidió formalizar la práctica de este deporte en la ciudad de Madrid. Sin embargo, la afición por el fútbol en la capital española había comenzado años antes, con la introducción del deporte por parte de estudiantes y emigrantes británicos.
+
+En sus primeros años, el club tuvo un enfoque amateur y participaba en competiciones locales como el Campeonato de Madrid. En 1905, logró su primer gran éxito al ganar la Copa de España, iniciando una racha de triunfos en esta competición que consolidaron su posición en el panorama futbolístico nacional.
+
+El título de "Real" fue otorgado al club en 1920 por el rey Alfonso XIII, junto con la corona en su escudo, marcando el inicio de una etapa más institucionalizada. Desde entonces, el Real Madrid ha evolucionado hasta convertirse en uno de los clubes más prestigiosos y exitosos del mundo, conocido por su trayectoria histórica y su impacto global.</p>
+        <img src="real_madrid_intro.jpg" alt="Escudo del Real Madrid">
+    </div>
+
+    <!-- Títulos -->
+    <div id="titulos" class="content section">
+        <h2>Títulos</h2>
+        <p>El Real Madrid cuenta con un impresionante palmarés que incluye 102 títulos oficiales:</p>
+        <ul>
+            <li>35 Ligas.</li>
+            <img src="ligas.jpg" alt="Trofeos del Real Madrid">
+            <li>15 Champions League.</li>
+            <img src="champions.jpg" alt="Trofeos del Real Madrid">
+            <li>20 Copas del Rey.</li>
+            <img src="crey.jpg" alt="Trofeos del Real Madrid">
+            <li>5 Mundiales de Clubes, entre otros.</li>
+            <img src="mundialitos.jpg" alt="Trofeos del Real Madrid">
+        </ul>
+    </div>
+
+    <!-- Jugadores Importantes -->
+    <div id="jugadores" class="content section">
+        <h2>Jugadores Importantes</h2>
+        <p>Algunos de los jugadores más icónicos del club son:</p>
+        <ul>
+            <li>Alfredo Di Stéfano.</li>
+            <img src="Alfredo.jpg" alt="Jugadores legendarios del Real Madrid">
+            <li>Raúl González.</li>
+            <img src="Raul.jpg" alt="Jugadores legendarios del Real Madrid">
+            <li>Cristiano Ronaldo.</li>
+            <img src="cr7.jpg" alt="Jugadores legendarios del Real Madrid">
+            <li>Iker Casillas.</li>
+            <img src="casillas.jpg" alt="Jugadores legendarios del Real Madrid">
+        </ul>
+    </div>
+
+    <!-- Valor del Club -->
+    <div id="valor" class="content section">
+        <h2>Valor del Club</h2>
+        <p>El Real Madrid está valorado en más de 5 mil millones de dólares, consolidándose como uno de los clubes más valiosos del mundo según rankings anuales de Forbes.</p>
+        <img src="real_madrid_valor.jpg" alt="Estadio Santiago Bernabéu">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
